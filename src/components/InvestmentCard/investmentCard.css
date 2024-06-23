@@ -1,0 +1,140 @@
+.app__investmentcard-card,
+.app__investmentcard-card_heading,
+.app__investmentcard-card_content {
+  position: relative;
+}
+
+.app__investmentcard-card {
+  max-width: 300px;
+  max-height: 343px;
+  overflow: hidden;
+
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 24px 60px rgba(33,33,33,0.16);
+  margin: 0 0 2rem;
+
+  transition: ease 0.7s;
+}
+
+.app__investmentcard-card:hover {
+  box-shadow: 0 24px 40px rgba(33,33,33,0.40);
+}
+
+.app__investmentcard-card_heading {
+  width: 100%;
+  height: 170px;
+  min-height: 170px;
+  overflow: hidden;
+
+  transition: ease 0.7s;
+}
+
+.app__investmentcard-card_heading.close {
+  height: 0;
+  min-height: 0;
+}
+
+.app__investmentcard-card_heading .app__investmentcard-card_tags {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.app__investmentcard-card_heading span.tags {
+  font-size: 8px;
+  font-weight: 400;
+  padding: 5px 10px 4px;
+  background: var(--color-white);
+  opacity: 0.7;
+}
+
+.app__investmentcard-card_heading img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.app__investmentcard-card_content {
+  padding: 1rem;
+  text-align: left;
+}
+
+.app__investmentcard-card_content h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.app__investmentcard-card_content span {
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--color-gray);
+}
+
+.app__investmentcard-card_content p.description {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1em;
+  height: 3em;
+  color: var(--color-black);
+
+  margin: 1rem 0;
+}
+
+.app__investmentcard-card .app__investmentcard-card_targetbar {
+  width: 100%;
+  height: 5px;
+  background-color: #ececec;
+  margin-bottom: 0.3rem;
+}
+
+.app__investmentcard-card .app__investmentcard-card_currentbar {
+  height: 5px;
+  background-color: var(--color-primary);
+  transform: translateY(calc(-0.3rem - 5px));
+}
+
+.app__investmentcard-card_content .blue-bold {
+  font-weight: bold;
+  color: var(--color-primary)
+}
+
+.app__investmentcard-card_details {
+  padding: 1.4rem 0;
+  margin: 0 1rem;
+  border-top: 1px solid #ececec;
+}
+
+.app__investmentcard-card_detail {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.app__investmentcard-card_detail span.key,
+.app__investmentcard-card_detail span.value {
+  font-size: 12px;
+}
+
+.app__investmentcard-card_detail span.key {
+  text-align: left;
+  font-weight: 300;
+}
+
+.app__investmentcard-card button.btn__secondary-block {
+  border: none;
+  width: 100%;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.app__investmentcard-card button.btn__secondary-block:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}

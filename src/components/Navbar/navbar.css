@@ -1,0 +1,50 @@
+.app__navbar-wrapper {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.app__navbar {
+  padding: 1.5rem 1.5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app__navbar-menus {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.app__navbar-menus_links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+a.app__navbar-menus_link {
+  color: var(--color-white);
+  margin: 0 15px;
+}
+
+a.app__navbar-menus_link:hover {
+  text-shadow: 3px 3px 4px var(--color-gray);
+}
+
+.app__navbar-menus_accounts {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.app__navbar-menus_accounts button {
+  flex: 1;
+  padding: 1rem 2rem;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}

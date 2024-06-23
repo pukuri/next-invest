@@ -1,0 +1,38 @@
+.app__investments-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.app__investments-wrapper img.bg {
+  position: absolute;
+  top: 5%;
+  left: 15%;
+  z-index: 0;
+}
+
+.app__investments {
+  max-width: 1280px;
+  padding:  6rem 0;
+  margin: auto;
+  text-align: center;
+}
+
+.app__investments p {
+  margin: auto;
+  max-width: 500px;
+
+  font-weight: 300;
+}
+
+.app__investments-cards {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.app__investments button {
+  padding: 1rem 2rem;
+}

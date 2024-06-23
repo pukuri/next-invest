@@ -1,0 +1,64 @@
+.app__header-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.app__header-bg,
+.app__header-circle,
+.app__header-stripe {
+  position: absolute;
+  z-index: -1;
+}
+
+.app__header-bg {
+  min-width: 100%;
+}
+
+.app__header-circle {
+  max-height: 150%;
+  top: -30%;
+  left: -15%;
+}
+
+.app__header-stripe {
+  max-height: 50%;
+  right: 0;
+  bottom: 0;
+}
+
+.app__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 15% 1.5rem;
+  top: 0;
+}
+
+.app__header-content {
+  position: relative;
+  max-width: 50%;
+}
+
+.app__header-content h1,
+.app__header-content p {
+  color: var(--color-white);
+}
+
+.app__header-content h1 {
+  font-size: 50px;
+}
+
+.app__header-content p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.app__header-content button {
+  margin-top: 1rem;
+  flex: 1;
+  padding: 1rem 3rem;
+  border-radius: 0;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
